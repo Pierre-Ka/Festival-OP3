@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title> Maquette : Accueil </title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" media="screen and (min-width: 992px)" href="css/grande_resolution.css" />
+		<script src="js/jquery.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+    	    	<style>
+                            @import url('http://fonts.cdnfonts.com/css/georgia');
+		</style> 
+        <style>
+  			.active {	color : #236EAF;	}
+  			.category-img1,
+  			.category-img2,
+  			.category-img3 {	display: none;	}
+			.showCategory {		display: block;		}</style>
+	</head>
+
+<body>
+<div class="container-fluid bg-light" id="headertop">
+	<div class="container">
+		<div class="row">
+			<nav class="navbar navbar-expand-lg ">
+
+				<div class="col-6 navbar-brand" id="logo">
+					<img src="logo.jpg" class="w-75"alt="logo"/>
+				</div>
+
+				<button class=" navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#menu">
+					<span class="navbar-toggler-icon">
+						<img src="icons/grid-3x3-gap-fill.svg" alt="" width="32" height="32"/>
+					</span>
+				</button>
+
+				<div id="menu" class="collapse navbar-collapse" >
+					<ul id="menuborder" class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Accueil</a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link" href="programmation.html">Programmation</a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+						<li class="nav-item" id="nav-item4">
+							<a class="nav-link" href="localisation.html">Localisation</a>
+						</li>
+					</ul>
+				</div>
+
+
+			 </nav>
+		</div>
+	</div> <!-- FERMETURE DU CONTAINER NAV !-->
+</div>
+
+<div id="cachemenu">
+</div>	
+
+<div class="background-outside">
+	<div class="container background-inside">
+		<div id="reseau">
+			<div class="element">
+				<img src="icons/sh.png" alt="" width="50" height="50"/>
+			</div>
+			<div class="element">
+				<img src="icons/fb.png" alt="" width="50" height="50"/>
+			</div>
+			<div class="element">
+				<img src="icons/tw.png" alt="" width="50" height="50"/>
+			</div>
+		</div>
+
+		<div id="div-pdf-prog">
+			<span class="text-center">
+					<img src="icons/pdf.jpg" alt="" width="40" height="40">
+			</span>
+			<h6 class="text-center" id="text-pdf"><a href="">Télécharger notre programme en PDF</a></h6>
+		</div>
+
+		<h2 class="display-6 text-center font-weight-bold"
+		id="5aout">Lundi 5 Aout</h2>
+	
+		<div class="underline">
+		</div>
+
+		<div class="row">
+			<div class="col-12 col-lg-6 movie-bloc">
+				<h4 class="text-center">A partir de 18H</h4>
+				<h3 class="titre-film text-center">Un tramway nommé désir</h3>
+
+	
+				<div class="gallery" id="gallery">
+	    			<div class="film-category text-center">
+	       				 <button class="category active" data-category="img1">1</button>
+	        			<button class="category" data-category="img2">2</button>
+	        			<button class="category" data-category="img3">3</button>
+	    			</div>
+	    			<div class="category-img1 showCategory">
+	       				 <div class="imageslist text-center w-100">
+	           				 <img class="card-img-center" src="img/1img1.jpg" alt="img1" class="gallery-image" width="420" height="450">
+	        			</div>
+	    			</div>
+	    			<div class="category-img2">
+	       				 <div class="imageslist text-center w-100">
+	            			<img class="card-img-center" src="img/1img2.jpg" alt="img2" class="gallery-image" width="420" height="450">
+	        			</div>
+	    			</div>
+	    			<div class="category-img3">
+	        			<div class="imageslist text-center w-100">
+	            			<img class="card-img-center" src="img/1img3.jpg" alt="img3" class="gallery-image" width="420" height="450">
+	        			</div>
+	    			</div>
+				</div>
+<!--
+
+					<div class="text-center w-100">
+					<img class="card-img-center" src="img/1img1.jpg" alt="" width="420" height="450"/>
+					</div>
+
+-->
+
+				<div class="bouton w-75">
+					<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Détail-1">Détails</button>
+					<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Reserver">Reserver</button>
+				</div>
+			</div>
+
+
+			<div class="col-12 col-lg-6 movie-bloc">
+				<h4 class="text-center">A partir de 21H30</h4>
+				<h3 class="titre-film text-center">Viva Zapata</h3>
+
+				<div class="gallery2" id="gallery2">
+	    			<div class="film-category2 text-center">
+	       				 <button class="category active" data-category="img1">1</button>
+	        			<button class="category" data-category="img2">2</button>
+	        			<button class="category" data-category="img3">3</button>
+	    			</div>
+	    			<div class="category-img1 showCategory">
+	       				 <div class="imageslist text-center w-100">
+	           				 <img class="card-img-center" src="img/2img1.jpg" alt="img1" class="gallery-image" width="420" height="450">
+	        			</div>
+	    			</div>
+	    			<div class="category-img2">
+	       				 <div class="imageslist text-center w-100">
+	            			<img class="card-img-center" src="img/2img2.jpg" alt="img2" class="gallery-image" width="420" height="450">
+	        			</div>
+	    			</div>
+	    			<div class="category-img3">
+	        			<div class="imageslist text-center w-100">
+	            			<img class="card-img-center" src="img/2img3.jpg" alt="img3" class="gallery-image" width="420" height="450">
+	        			</div>
+	    			</div>
+				</div> 
+
+	<!--
+				<div class="text-center w-100">
+					<img class="card-img-center" src="img/2img1.jpg" alt="" width="420" height="450"/>
+				</div>
+			-->
+
+
+				<div class="bouton w-75">
+
+					<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Détail-2">Détails</button>
+					<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Reserver">Reserver</button>
+				</div>
+			</div>
+		</div>
+
+		<h2 class="display-6 text-center font-weight-bold" id="6aout">Mardi 6 Aout</h2>
+	
+		<div class="underline">
+		</div> 
+
+		<div class="row">
+			<div class="col-12 col-lg-6 movie-bloc">
+				<h4 class="text-center">A partir de 18H</h4>
+				<h3 class="titre-film text-center">Sur les quais</h3>
+
+				<div class="gallery3" id="gallery3">
+		    		<div class="film-category3 text-center">
+		       			<button class="category active" data-category="img1">1</button>
+		        		<button class="category" data-category="img2">2</button>
+		        		<button class="category" data-category="img3">3</button>
+		    		</div>
+		    		<div class="category-img1 showCategory">
+		       			<div class="imageslist text-center w-100">
+		           			<img class="card-img-center" src="img/3img1.jpg" alt="img1" class="gallery-image" width="420" height="450">
+		        		</div>
+		    		</div>
+		    		<div class="category-img2">
+		       			<div class="imageslist text-center w-100">
+		            		<img class="card-img-center" src="img/3img2.jpg" alt="img2" class="gallery-image" width="420" height="450">
+		        		</div>
+		    		</div>
+		    		<div class="category-img3">
+		        		<div class="imageslist text-center w-100">
+		            		<img class="card-img-center" src="img/3img3.jpg" alt="img3" class="gallery-image" width="420" height="450">
+		        		</div>
+		    		</div>
+				</div>
+
+<!--
+				<div class="text-center w-100">
+					<img class="card-img-center" src="img/3img1.jpg" alt="" width="420" height="450"/>
+				</div>	
+			-->
+
+
+
+				<div class="bouton w-75">
+					<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Détail-3">Détails</button>
+					<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Reserver">Reserver</button>
+				</div>
+			</div>
+
+			<div class="col-12 col-lg-6 movie-bloc">
+				<h4 class="text-center">A partir de 21H30</h4>
+				<h3 class="titre-film text-center">Les révoltés du bounty</h3>
+
+				<div class="gallery4" id="gallery4">
+	    			<div class="film-category4 text-center">
+	       				 <button class="category active" data-category="img1">1</button>
+	        			<button class="category" data-category="img2">2</button>
+	        			<button class="category" data-category="img3">3</button>
+	    			</div>
+	    			<div class="category-img1 showCategory">
+	       				 <div class="imageslist text-center w-100">
+	           				 <img class="card-img-center" src="img/4img1.jpg" alt="img1" class="gallery-image">
+	        			</div>
+	    			</div>
+	    			<div class="category-img2">
+	       				 <div class="imageslist text-center w-100">
+	            			<img class="card-img-center" src="img/4img2.jpg" alt="img2" class="gallery-image">
+	        			</div>
+	    			</div>
+	    			<div class="category-img3">
+	        			<div class="imageslist text-center w-100">
+	            			<img class="card-img-center" src="img/4img3.jpg" alt="img3" class="gallery-image">
+	        			</div>
+	    			</div>
+				</div>
+
+	<!--
+				<div class="text-center w-100">
+					<img class="card-img-center" src="img/4img1.jpg" alt="" width="420" height="450"/>
+				</div>
+	-->
+
+
+				<div class="bouton w-75">
+					<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Détail-4">Détails</button>
+					<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Reserver">Reserver</button>
+				</div>
+			</div>
+		</div> <!-- CLASS ROW !-->
+		
+
+		
+		<h2 class="display-6 text-center font-weight-bold" id="7aout">Mercredi 7 Aout</h2>
+	
+		<div class="underline">
+		</div> 
+
+		<div class="row">
+			<div class="col-12 col-lg-6 movie-bloc">
+				<h4 class="text-center">A partir de 18H</h4>
+				<h3 class="titre-film text-center">La poursuite impitoyable</h3>
+
+				<div class="gallery5" id="gallery5">
+	    			<div class="film-category5 text-center">
+	       				 <button class="category active" data-category="img1">1</button>
+	        			<button class="category" data-category="img2">2</button>
+	        			<button class="category" data-category="img3">3</button>
+	    			</div>
+	    			<div class="category-img1 showCategory">
+	       				 <div class="imageslist text-center w-100">
+	           				 <img class="card-img-center" src="img/5img1.jpg" alt="img1" class="gallery-image">
+	        			</div>
+	    			</div>
+	    			<div class="category-img2">
+	       				 <div class="imageslist text-center w-100">
+	            			<img class="card-img-center" src="img/5img2.jpg" alt="img2" class="gallery-image" >
+	        			</div>
+	    			</div>
+	    			<div class="category-img3">
+	        			<div class="imageslist text-center w-100">
+	            			<img class="card-img-center" src="img/5img3.jpg" alt="img3" class="gallery-image">
+	        			</div>
+	    			</div>
+				</div>
+
+	<!--
+				<div class="text-center w-100">
+					<img class="card-img-center" src="img/5img1.jpg" alt="" width="420" height="450"/>
+				</div>	
+
+	-->
+
+			<div class="bouton w-75">
+					<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Détail-5">Détails</button>
+					<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Reserver">Reserver</button>
+				</div>
+			</div>
+
+			<div class="col-12 col-lg-6 movie-bloc">
+				<h4 class="text-center">A partir de 21H30</h4>
+				<h3 class="titre-film text-center">Missouri Breaks</h3>
+
+
+				<div class="gallery6" id="gallery6">
+	    			<div class="film-category6 text-center">
+	       				 <button class="category active" data-category="img1">1</button>
+	        			<button class="category" data-category="img2">2</button>
+	        			<button class="category" data-category="img3">3</button>
+	    			</div>
+	    			<div class="category-img1 showCategory">
+	       				 <div class="imageslist text-center w-100">
+	           				 <img class="card-img-center" src="img/6img1.jpg" alt="img1" class="gallery-image" >
+	        			</div>
+	    			</div>
+	    			<div class="category-img2">
+	       				 <div class="imageslist text-center w-100">
+	            			<img class="card-img-center" src="img/6img2.jpg" alt="img2" class="gallery-image" >
+	        			</div>
+	    			</div>
+	    			<div class="category-img3">
+	        			<div class="imageslist text-center w-100">
+	            			<img class="card-img-center" src="img/6img3.jpg" alt="img3" class="gallery-image" >
+	        			</div>
+	    			</div>
+				</div>
+
+		<!--
+				<div class="text-center w-100">
+					<img class="card-img-center" src="img/6img1.jpg" alt="" width="420" height="450"/>
+				</div>	
+
+		-->
+
+				<div class="bouton w-75">
+					<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Détail-6">Détails</button>
+					<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Reserver">Reserver</button>
+				</div>
+			</div>
+		</div> <!-- CLASS ROW !-->
+
+
+
+
+	<h2 class="display-6 text-center font-weight-bold" id="8aout">Jeudi 8 Aout</h2>
+	
+		<div class="underline">
+		</div> 
+
+		<div class="row">
+			<div class="col-12 col-lg-6 movie-bloc">
+				<h4 class="text-center">A partir de 18H</h4>
+				<h3 class="titre-film text-center">Le parrain</h3>
+
+				<div class="gallery7" id="gallery7">
+	    			<div class="film-category7 text-center">
+	       				 <button class="category active" data-category="img1">1</button>
+	        			<button class="category" data-category="img2">2</button>
+	        			<button class="category" data-category="img3">3</button>
+	    			</div>
+	    			<div class="category-img1 showCategory">
+	       				 <div class="imageslist text-center w-100">
+	           				 <img class="card-img-center" src="img/7img1.jpg" alt="img1" class="gallery-image" >
+	        			</div>
+	    			</div>
+	    			<div class="category-img2">
+	       				 <div class="imageslist text-center w-100">
+	            			<img class="card-img-center" src="img/7img2.jpg" alt="img2" class="gallery-image" >
+	        			</div>
+	    			</div>
+	    			<div class="category-img3">
+	        			<div class="imageslist text-center w-100">
+	            			<img class="card-img-center" src="img/7img3.jpg" alt="img3" class="gallery-image" >
+	        			</div>
+	    			</div>
+				</div>
+
+		<!--
+				<div class="text-center w-100">
+					<img class="card-img-center" src="img/7img1.jpg" alt="" width="420" height="450"/>
+				</div>	
+
+		-->
+
+			<div class="bouton w-75">
+					<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Détail-7">Détails</button>
+					<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Reserver">Reserver</button>
+				</div>
+			</div>
+
+			<div class="col-12 col-lg-6 movie-bloc">
+				<h4 class="text-center">A partir de 21H30</h4>
+				<h3 class="titre-film text-center">L'homme à la peau de serpent</h3>
+
+				<div class="gallery8" id="gallery8">
+	    			<div class="film-category8 text-center">
+	       				 <button class="category active" data-category="img1">1</button>
+	        			<button class="category" data-category="img2">2</button>
+	        			<button class="category" data-category="img3">3</button>
+	    			</div>
+	    			<div class="category-img1 showCategory">
+	       				 <div class="imageslist text-center w-100">
+	           				 <img class="card-img-center" src="img/8img1.jpg" alt="img1" class="gallery-image" >
+	        			</div>
+	    			</div>
+	    			<div class="category-img2">
+	       				 <div class="imageslist text-center w-100">
+	            			<img class="card-img-center" src="img/8img2.jpg" alt="img2" class="gallery-image" >
+	        			</div>
+	    			</div>
+	    			<div class="category-img3">
+	        			<div class="imageslist text-center w-100">
+	            			<img class="card-img-center" src="img/8img3.jpg" alt="img3" class="gallery-image" >
+	        			</div>
+	    			</div>
+				</div>
+
+	<!--
+				<div class="text-center w-100">
+					<img class="card-img-center" src="img/8img1.jpg" alt="" width="420" height="450"/>
+				</div>
+
+	-->
+
+				<div class="bouton w-75">
+					<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Détail-8">Détails</button>
+					<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#Reserver">Reserver</button>
+				</div>
+			</div>
+		</div> <!-- CLASS ROW !-->
+
+
+
+
+
+
+	</div> <!-- FERMETURE CLASS CONTAINER BACKGROUND-INSIDE!-->
+</div> <!-- FERMETURE CLASS BACKGROUND-OUTSIDE !-->
+
+<footer class="footer bg-dark">
+	<div class="container">
+		<div class="row blocfooter">
+			<div class="col-12 col-xl-5">
+				<form>
+					<label for="emailing1" id="emailing">S'abonner à notre emailing</label></br>
+					<input type="email" id="emailing1" class="textarea" ></br>
+					<input type="button" value="S'inscrire"/>
+				</form>
+			</div>
+
+			<div class="col-12 col-sm-6 col-lg-4 col-xl-2" id="lasso">
+				<h6 class="h6"> L'ASSO </h6>
+				<ul>
+					<li><a href="">Coordonnées</a>
+					</li>
+					<li><a href="">Politique</a>
+					</li>
+					<li><a href="">Regles Sanitaires</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-12 col-sm-6 col-lg-4 col-xl-2" id="apropos">
+				<h6 class="h6"> A PROPOS </h6>
+				<ul>
+					<li><a href="">Mentions Légales</a>
+					</li>
+					<li><a href="">Cookies</a>
+					</li>
+					<li><a href="">Reglementation RGPD</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-12 col-sm-6 col-lg-4 col-xl-2" id="presse">
+				<h6 class="h6"> ESPACE PRESSE </h6>
+				<ul>
+					<li><a href="">Télérama</a>
+					</li>
+					<li><a href="">Allociné</a>
+					</li>
+					<li><a href="">CinéAction</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-12 " id="design">
+				<p> DESIGNED BY RAULT PIERRE </p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!--**************DEBUT DES MODALS ******************!-->
+<!--**************DEBUT DES MODALS ******************!-->
+<!--**************DEBUT DES MODALS ******************!-->
+<!--**************DEBUT DES MODALS ******************!-->
+<!--**************DEBUT DES MODALS ******************!-->
+<!--**************DEBUT DES MODALS ******************!-->
+<!--**************DEBUT DES MODALS ******************!-->
+<!--**************DEBUT DES MODALS ******************!-->
+<!--**************DEBUT DES MODALS ******************!-->
+<!--**************DEBUT DES MODALS ******************!-->
+<!--**************DEBUT DES MODALS ******************!-->
+<!--**************DEBUT DES MODALS ******************!-->
+<!--**************DEBUT DES MODALS ******************!-->
+<!--**************DEBUT DES MODALS ******************!-->
+<!--**************DEBUT DES MODALS ******************!-->
+<!--**************DEBUT DES MODALS ******************!-->
+
+<!-- MODAL RESERVER-->
+<div class="modal fade" id="Reserver" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reserver</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+     <div class="modal-body">
+	       		<div class="modal-div">Reserver pour voir ce film </div>
+				<form method="post" action="">
+	       			<div class="modal-div"><label for="number">Combien de personnes ?</label></div>
+	       			<div class="modal-div2">
+	       				<select name="number" id="number">
+	       				<option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9-12">9-12</option><option value="13-25">13-25</option><option value="25+">25+</option>
+	       				</select>
+	       			</div>
+	       			<div class="text-center" >
+	       				<input class="bouton-modal" type="submit" value="Confirmer la reservation"/>
+	       			</div>
+	       		</form>
+	      </div>
+    </div>
+  </div>
+</div> 
+
+<!--**************MODAL DETAILS FILM NUMERO 1 ******************!-->
+<div class="modal fade" id="Détail-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Détails</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-title title-detail">Bande-annonce : </div>
+        <div class="text-center">
+          <iframe width="" height="200"src="https://www.youtube.com/embed/aJsQfvydcY8" alt="video"></iframe>
+        </div>
+        <div class="modal-title title-detail">Synopsis : </div>
+          <p class="modal-div modal-p"> Après une longue séparation, Blanche Dubois vient rejoindre sa soeur, Stella, à La Nouvelle-Orléans. Celle-ci vit avec son mari, Stanley, ouvrier d'origine polonaise, dans le vieux quartier français. Ce dernier n'apprécie guère les manières distinguées de Blanche et cherche à savoir quel a été le véritable passé de sa belle-soeur. </p>
+        
+        <div class="modal-title title-detail">Fiche technique : 
+        </div>
+        <p class="modal-div modal-p">
+      28 mars 1952 en salle / 2h 02min / Drame <br/>
+      De Elia Kazan <br/>     
+      Par Tennessee Williams, Oscar Saul<br/>
+      Avec Vivien Leigh, Marlon Brando, Kim Hunter<br/>
+      Titre original A Streetcar Named Desire
+    </p>
+      
+      <div class="modal-footer">
+        <button type="button" class="bouton-modal" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+</div> 
+
+<!--**************MODAL DETAILS FILM NUMERO 2 ******************!-->
+<div class="modal fade" id="Détail-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Détails</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-title title-detail">Bande-annonce : </div>
+        <div class="text-center">
+          <iframe width="" height="200"src="https://www.youtube.com/embed/tdT2uU_YTXs" alt="video"></iframe>
+        </div>
+        <div class="modal-title title-detail">Synopsis : </div>
+          <p class="modal-div modal-p"> Spolié par les riches propriétaires terriens, un groupe de péons part protester auprès du président Porfirio Diaz. Ce dictateur n'a que faire du bon droit des petits paysans. L'un d'eux, Emiliano Zapata, décide alors de prendre le maquis. </p>
+        
+        <div class="modal-title title-detail">Fiche technique : 
+        </div>
+        <p class="modal-div modal-p">
+      
+      17 septembre 1952 en DVD / 1h 53min / Biopic, Historique <br/>
+      De Elia Kazan <br/>     
+      Par John Steinbeck, Edgecumb Pinchon<br/>
+      Avec Marlon Brando, Anthony Quinn, Jean Peters<br/>
+      Titre original A Streetcar Named Desire
+    </p>
+      
+      <div class="modal-footer">
+        <button type="button" class="bouton-modal" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+</div>
+
+
+
+<!--**************MODAL DETAILS FILM NUMERO 3 ******************!-->
+<div class="modal fade" id="Détail-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Détails</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-title title-detail">Bande-annonce : </div>
+        <div class="text-center">
+          <iframe width="" height="200"src="https://www.youtube.com/embed/f6J1PZVcdMY" alt="video"></iframe>
+        </div>
+        <div class="modal-title title-detail">Synopsis : </div>
+          <p class="modal-div modal-p"> Un jeune docker, Terry Malloy, ancien boxeur, est manipulé par son frère, avocat du syndicat des dockers dirigé par le crapuleux Johnny Friendly. Il assiste sans intervenir au meurtre d'un employé qui voulait dénoncer les méthodes illégales de ce dernier. Malloy se retrouve devant un cas de conscience... </p>
+        
+        <div class="modal-title title-detail">Fiche technique : 
+        </div>
+        <p class="modal-div modal-p">
+      14 janvier 1955 en salle / 1h 46min / Drame, Policier, Romance <br/>
+      De Elia Kazan <br/>     
+      Par Budd Schulberg, Malcolm Johnson<br/>
+      Avec Marlon Brando, Karl Malden, Eva Marie Saint<br/>
+      Titre original On the Waterfront
+    </p>
+      
+      <div class="modal-footer">
+        <button type="button" class="bouton-modal" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--**************MODAL DETAILS FILM NUMERO 4 ******************!-->
+<div class="modal fade" id="Détail-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Détails</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-title title-detail">Bande-annonce : </div>
+        <div class="text-center">
+          <iframe width="" height="200"src="https://www.youtube.com/embed/r_Fa3AhdhKI" alt="video"></iframe>
+        </div>
+        <div class="modal-title title-detail">Synopsis : </div>
+          <p class="modal-div modal-p"> Le Bounty ramène de Tahiti des plants d'arbres à pain et les transporte en Jamaïque. A son bord, le cruel capitaine Bligh affame ses hommes et les maltraite. Le lieutenant Fletcher Christian va s'opposer à lui et organiser une mutinerie.  </p>
+        
+        <div class="modal-title title-detail">Fiche technique : 
+        </div>
+        <p class="modal-div modal-p">
+      08 novembre 1962 en DVD / 2h 58min / Aventure, Historique, Romance<br/>
+      De Lewis Milestone, Carol Reed  <br/>     
+      Par Charles Lederer, Eric Ambler<br/>
+      Avec Marlon Brando, Trevor Howard, Richard Harris<br/>
+      Titre original Mutiny on the Bounty
+    </p>
+      
+      <div class="modal-footer">
+        <button type="button" class="bouton-modal" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+
+<!--**************MODAL DETAILS FILM NUMERO 5 ******************!-->
+<div class="modal fade" id="Détail-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Détails</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-title title-detail">Bande-annonce : </div>
+        <div class="text-center">
+          <iframe width="" height="200"src="https://www.youtube.com/embed/plmBOSpRGiw" alt="video"></iframe>
+        </div>
+        <div class="modal-title title-detail">Synopsis : </div>
+          <p class="modal-div modal-p"> Au Texas, le retour d’un évadé de prison dans sa ville natale déchaîne les passions. Le shérif se promet de trouver le fugitif avant que la foule ne s'en empare.   </p>
+        
+        <div class="modal-title title-detail">Fiche technique : 
+        </div>
+        <p class="modal-div modal-p">
+      15 septembre 1966 en salle / 2h 15min / Drame, Policier, Thriller<br/>
+      De Arthur Penn  <br/>     
+      Par Lilian Hellman, Horton Foote<br/>
+      Avec Marlon Brando, Robert Redford, Jane Fonda<br/>
+      Titre original The Chase
+    	</p>
+      
+      <div class="modal-footer">
+        <button type="button" class="bouton-modal" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+
+<!--**************MODAL DETAILS FILM NUMERO 6 ******************!-->
+<div class="modal fade" id="Détail-6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Détails</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-title title-detail">Bande-annonce : </div>
+        <div class="text-center">
+          <iframe width="" height="200"src="https://www.youtube.com/embed/9Mx0elR30b0" alt="video"></iframe>
+        </div>
+        <div class="modal-title title-detail">Synopsis : </div>
+          <p class="modal-div modal-p"> Tom Cattle est un voleur de bétail. Pour couvrir ses activités, il achète un ranch. Mais, le propriétaire du ranch voisin a engagé un "mercenaire" afin d'éliminer les voleurs de bétails. </p>
+        
+        <div class="modal-title title-detail">Fiche technique : 
+        </div>
+        <p class="modal-div modal-p">
+	  20 octobre 1976 en salle / 2h 06min / Western, Drame <br/>
+      De Arthur Penn  <br/>     
+      Par Thomas McGuane, Robert Towne<br/>
+      Avec Marlon Brando, Jack Nicholson, Frederic Forrest<br/>
+      Titre original Missouri Breaks
+    	</p>
+      
+      <div class="modal-footer">
+        <button type="button" class="bouton-modal" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+
+<!--**************MODAL DETAILS FILM NUMERO 7 ******************!-->
+<div class="modal fade" id="Détail-7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Détails</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-title title-detail">Bande-annonce : </div>
+        <div class="text-center">
+          <iframe width="" height="200"src="https://www.youtube.com/embed/NifItiFuF3M" alt="video"></iframe>
+        </div>
+        <div class="modal-title title-detail">Synopsis : </div>
+          <p class="modal-div modal-p"> En 1945, à New York, les Corleone sont une des cinq familles de la mafia. Don Vito Corleone, "parrain" de cette famille, marie sa fille à un bookmaker. Sollozzo, " parrain " de la famille Tattaglia, propose à Don Vito une association dans le trafic de drogue, mais celui-ci refuse. Sonny, un de ses fils, y est quant à lui favorable.
+		  Afin de traiter avec Sonny, Sollozzo tente de faire tuer Don Vito, mais celui-ci en réchappe. Michael, le frère cadet de Sonny, recherche alors les commanditaires de l'attentat et tue Sollozzo et le chef de la police, en représailles.
+		  Michael part alors en Sicile, où il épouse Apollonia, mais celle-ci est assassinée à sa place. De retour à New York, Michael épouse Kay Adams et se prépare à devenir le successeur de son père...   </p>
+        
+        <div class="modal-title title-detail">Fiche technique : 
+        </div>
+        <p class="modal-div modal-p">
+      18 octobre 1972 en salle / 2h 55min / Policier, Drame<br/>
+      De Francis Ford Coppola <br/>     
+      Par Francis Ford Coppola, Mario Puzo<br/>
+      Avec Marlon Brando, Al Pacino, James Caan<br/>
+      Titre original The Godfather
+    </p>
+      
+      <div class="modal-footer">
+        <button type="button" class="bouton-modal" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+
+<!--**************MODAL DETAILS FILM NUMERO 8 ******************!-->
+<div class="modal fade" id="Détail-8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Détails</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-title title-detail">Bande-annonce : </div>
+        <div class="text-center">
+          <iframe width="" height="200"src="https://www.youtube.com/embed/Wr_kd-ivZ9c" alt="video"></iframe>
+        </div>
+        <div class="modal-title title-detail">Synopsis : </div>
+          <p class="modal-div modal-p"> Val Xavier, jeune musicien révolté et vagabond, chassé de la Nouvelle-Orléans, échoue dans une bourgade du Mississippi. Il travaille pour une commerçante, Lady Torrance, dont il devient l'amant. Mais Carol Cutrere le poursuit de ses assiduités depuis la Nouvelle-Orléans et décide de le perdre... </p>
+        
+        <div class="modal-title title-detail">Fiche technique : 
+        </div>
+        <p class="modal-div modal-p">
+      13 avril 1960 en salle / 1h 59min / Drame, Romance<br/>
+      De Sidney Lumet <br/>     
+      Par Tennessee Williams<br/>
+      Avec Marlon Brando, Anna Magnani, Victor Jory<br/>
+      Titre original The Fugitive Kind
+    	</p>
+      
+      <div class="modal-footer">
+        <button type="button" class="bouton-modal" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+
+<!--**************FIN DES MODALS ******************!-->
+<!--**************FIN DES MODALS ******************!-->
+<!--**************FIN DES MODALS ******************!-->
+<!--**************FIN DES MODALS ******************!-->
+
+<!--**************DEBUT DU JS ONCLICK ******************!-->
+<!--**************DEBUT DU JS ONCLICK ******************!-->
+<!--**************DEBUT DU JS ONCLICK ******************!-->
+<!--**************DEBUT DU JS ONCLICK ******************!-->
+<!--**************DEBUT DU JS ONCLICK ******************!-->
+<!--**************DEBUT DU JS ONCLICK ******************!-->
+<!--**************DEBUT DU JS ONCLICK ******************!-->
+<!--**************DEBUT DU JS ONCLICK ******************!-->
+
+<script>
+	var controls = document.querySelector('.film-category');
+	var gallery = document.querySelector('.gallery');
+
+controls.addEventListener('click', displayCategory);
+
+
+function displayCategory(ev) {
+  var selectedControl = controls.querySelector('.active');
+  var activeCategory = gallery.querySelector('.showCategory');
+  // exiting early if the selected control
+  // is the clicked button
+  if (ev.target === selectedControl) { return; }
+
+  var categoryId = ev.target.dataset.category;
+  var category = gallery.querySelector('.category-' + categoryId);
+  
+  ev.target.classList.add('active');
+  category.classList.add('showCategory');
+  selectedControl.classList.remove('active');
+  activeCategory.classList.remove('showCategory');
+}
+</script>
+
+<script>
+  var controls2 = document.querySelector('.film-category2');
+  var gallery2 = document.querySelector('.gallery2');
+
+controls2.addEventListener('click', displayCategory2);
+
+
+function displayCategory2(ev) {
+  var selectedControl = controls2.querySelector('.active');
+  var activeCategory = gallery2.querySelector('.showCategory');
+  // exiting early if the selected control
+  // is the clicked button
+  if (ev.target === selectedControl) { return; }
+
+  var categoryId = ev.target.dataset.category;
+  var category = gallery2.querySelector('.category-' + categoryId);
+  
+  ev.target.classList.add('active');
+  category.classList.add('showCategory');
+  selectedControl.classList.remove('active');
+  activeCategory.classList.remove('showCategory');
+}
+</script>
+
+<script>
+  var controls3 = document.querySelector('.film-category3');
+  var gallery3 = document.querySelector('.gallery3');
+
+controls3.addEventListener('click', displayCategory3);
+
+
+function displayCategory3(ev) {
+  var selectedControl = controls3.querySelector('.active');
+  var activeCategory = gallery3.querySelector('.showCategory');
+  // exiting early if the selected control
+  // is the clicked button
+  if (ev.target === selectedControl) { return; }
+
+  var categoryId = ev.target.dataset.category;
+  var category = gallery3.querySelector('.category-' + categoryId);
+  
+  ev.target.classList.add('active');
+  category.classList.add('showCategory');
+  selectedControl.classList.remove('active');
+  activeCategory.classList.remove('showCategory');
+}
+</script>
+
+<script>
+  var controls4 = document.querySelector('.film-category4');
+  var gallery4 = document.querySelector('.gallery4');
+
+controls4.addEventListener('click', displayCategory4);
+
+
+function displayCategory4(ev) {
+  var selectedControl = controls4.querySelector('.active');
+  var activeCategory = gallery4.querySelector('.showCategory');
+  // exiting early if the selected control
+  // is the clicked button
+  if (ev.target === selectedControl) { return; }
+
+  var categoryId = ev.target.dataset.category;
+  var category = gallery4.querySelector('.category-' + categoryId);
+  
+  ev.target.classList.add('active');
+  category.classList.add('showCategory');
+  selectedControl.classList.remove('active');
+  activeCategory.classList.remove('showCategory');
+}
+</script>
+
+<script>
+  var controls5 = document.querySelector('.film-category5');
+  var gallery5 = document.querySelector('.gallery5');
+
+controls5.addEventListener('click', displayCategory5);
+
+
+function displayCategory5(ev) {
+  var selectedControl = controls5.querySelector('.active');
+  var activeCategory = gallery5.querySelector('.showCategory');
+  // exiting early if the selected control
+  // is the clicked button
+  if (ev.target === selectedControl) { return; }
+
+  var categoryId = ev.target.dataset.category;
+  var category = gallery5.querySelector('.category-' + categoryId);
+  
+  ev.target.classList.add('active');
+  category.classList.add('showCategory');
+  selectedControl.classList.remove('active');
+  activeCategory.classList.remove('showCategory');
+}
+</script>
+<script>
+  var controls6 = document.querySelector('.film-category6');
+  var gallery6 = document.querySelector('.gallery6');
+
+controls6.addEventListener('click', displayCategory6);
+
+
+function displayCategory6(ev) {
+  var selectedControl = controls6.querySelector('.active');
+  var activeCategory = gallery6.querySelector('.showCategory');
+  // exiting early if the selected control
+  // is the clicked button
+  if (ev.target === selectedControl) { return; }
+
+  var categoryId = ev.target.dataset.category;
+  var category = gallery6.querySelector('.category-' + categoryId);
+  
+  ev.target.classList.add('active');
+  category.classList.add('showCategory');
+  selectedControl.classList.remove('active');
+  activeCategory.classList.remove('showCategory');
+}
+</script>
+<script>
+  var controls7 = document.querySelector('.film-category7');
+  var gallery7 = document.querySelector('.gallery7');
+
+controls7.addEventListener('click', displayCategory7);
+
+
+function displayCategory7(ev) {
+  var selectedControl = controls7.querySelector('.active');
+  var activeCategory = gallery7.querySelector('.showCategory');
+  // exiting early if the selected control
+  // is the clicked button
+  if (ev.target === selectedControl) { return; }
+
+  var categoryId = ev.target.dataset.category;
+  var category = gallery7.querySelector('.category-' + categoryId);
+  
+  ev.target.classList.add('active');
+  category.classList.add('showCategory');
+  selectedControl.classList.remove('active');
+  activeCategory.classList.remove('showCategory');
+}
+</script>
+
+<script>
+  var controls8 = document.querySelector('.film-category8');
+  var gallery8 = document.querySelector('.gallery8');
+
+controls8.addEventListener('click', displayCategory8);
+
+
+function displayCategory8(ev) {
+  var selectedControl = controls8.querySelector('.active');
+  var activeCategory = gallery8.querySelector('.showCategory');
+  // exiting early if the selected control
+  // is the clicked button
+  if (ev.target === selectedControl) { return; }
+
+  var categoryId = ev.target.dataset.category;
+  var category = gallery8.querySelector('.category-' + categoryId);
+  
+  ev.target.classList.add('active');
+  category.classList.add('showCategory');
+  selectedControl.classList.remove('active');
+  activeCategory.classList.remove('showCategory');
+}
+</script>
+
+</body>
+</html>

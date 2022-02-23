@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title> Maquette : Accueil </title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" media="screen and (min-width: 992px)" href="css/grande_resolution.css" />
+		<script src="js/jquery.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+    	    	<style>
+                            @import url('http://fonts.cdnfonts.com/css/georgia');
+		</style> 
+	</head>
+
+<body>
+<div class="container-fluid bg-light" id="headertop">
+	<div class="container bg-light">
+		<div class="row">
+			<nav class="navbar navbar-expand-lg ">
+
+				<div class="col-6 navbar-brand" id="logo">
+					<img src="logo.jpg" class="w-75"alt="logo"/>
+				</div>
+
+				<button class=" navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#menu">
+					<span class="navbar-toggler-icon">
+						<img src="icons/grid-3x3-gap-fill.svg" alt="" width="32" height="32"/>
+					</span>
+				</button>
+
+				<div id="menu" class="collapse navbar-collapse" >
+					<ul id="menuborder" class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Accueil</a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link" href="programmation.html">Programmation</a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+						<li class="nav-item" id="nav-item4">
+							<a class="nav-link" href="localisation.html">Localisation</a>
+						</li>
+					</ul>
+				</div>
+
+
+			 </nav>
+		</div>
+	</div> <!-- FERMETURE DU CONTAINER NAV !-->
+</div>
+
+<div id="cachemenu">
+</div>
+
+<div class="background-outside">
+	<div class="container background-inside">
+		<div id="reseau">
+			<div class="element">
+				<img src="icons/sh.png" alt="" width="50" height="50"/>
+			</div>
+			<div class="element">
+				<img src="icons/fb.png" alt="" width="50" height="50"/>
+			</div>
+			<div class="element">
+				<img src="icons/tw.png" alt="" width="50" height="50"/>
+			</div>
+		</div>
+
+		<div class="titre-autre">
+			<h3 class="h3"> Trouver le festival </h3>
+		</div>
+
+		<div id="map-bloc">
+			<div class="map-bloc-item">
+				<iframe id="map" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8737382034947!2d2.3067663154749587!3d48.87968347928964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1636131917414!5m2!1sfr!2sfr" width="420" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+
+
+			<div class="map-bloc-item" id="adresse">
+				<div>
+					<strong> Adresse : </strong></br>
+					Parc Monceau,<br/>
+					38 Boulevard de Courcelles,<br/>
+					75016, Paris	<br/><br/>
+							
+					<strong>Bus : </strong></br>
+					30 : Arret Parc Monceau,</br>
+					66 : Arret Parc Monceau,</br>
+					84 : Arret Parc Monceau,</br>
+					93 : Arret Parc Monceau,</br></br>
+
+					<strong>Metro : </strong>Ligne 2 </br></br>
+					<strong>Train : </strong>Ligne L </br></br>
+				</div>
+			</div>
+
+
+		</div>
+
+
+
+
+
+	</div>
+</div>
+
+<footer class="footer bg-dark">
+	<div class="container">
+		<div class="row blocfooter">
+			<div class="col-12 col-xl-5">
+				<form>
+					<label for="emailing1" id="emailing">S'abonner à notre emailing</label></br>
+					<input type="email" id="emailing1" class="textarea" ></br>
+					<input type="button" value="S'inscrire"/>
+				</form>
+			</div>
+
+			<div class="col-12 col-sm-6 col-lg-4 col-xl-2" id="lasso">
+				<h6 class="h6"> L'ASSO </h6>
+				<ul>
+					<li><a href="">Coordonnées</a>
+					</li>
+					<li><a href="">Politique</a>
+					</li>
+					<li><a href="">Regles Sanitaires</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-12 col-sm-6 col-lg-4 col-xl-2" id="apropos">
+				<h6 class="h6"> A PROPOS </h6>
+				<ul>
+					<li><a href="">Mentions Légales</a>
+					</li>
+					<li><a href="">Cookies</a>
+					</li>
+					<li><a href="">Reglementation RGPD</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-12 col-sm-6 col-lg-4 col-xl-2" id="presse">
+				<h6 class="h6"> ESPACE PRESSE </h6>
+				<ul>
+					<li><a href="">Télérama</a>
+					</li>
+					<li><a href="">Allociné</a>
+					</li>
+					<li><a href="">CinéAction</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-12 " id="design">
+				<p> DESIGNED BY RAULT PIERRE </p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
